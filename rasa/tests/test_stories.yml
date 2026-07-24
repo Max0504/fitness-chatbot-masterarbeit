@@ -1,0 +1,17 @@
+version: "3.1"
+
+stories:
+- story: Greet and say goodbye
+  steps:
+  - user: "hallo"
+    intent: greet
+  - action: utter_greet
+  - user: "tschüss"
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: Ask capabilities
+  steps:
+  - user: "was kannst du"
+    intent: bot_capabilities
+  - action: utter_bot_capabilities

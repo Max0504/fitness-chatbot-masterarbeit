@@ -1,0 +1,285 @@
+version: "3.1"
+
+rules:
+
+# Standard-Antworten von Rasa
+- rule: Sag Hallo
+  steps:
+  - intent: greet
+  - action: action_smart_greet
+
+- rule: Sag Tschüss
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Bestätigen
+  condition:
+  - active_loop: null
+  steps:
+  - intent: affirm
+  - action: utter_affirm_response
+
+- rule: Verneinen
+  condition:
+  - active_loop: null
+  steps:
+  - intent: deny
+  - action: utter_deny_response
+
+- rule: Danken
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Capabilities
+  steps:
+  - intent: bot_capabilities
+  - action: utter_bot_capabilities
+
+# Strukturierte Flows (Rasa-Actions ohne LLM)
+- rule: Onboarding starten
+  steps:
+  - intent: start_onboarding
+  - action: onboarding_form
+  - active_loop: onboarding_form
+
+- rule: Onboarding abschließen
+  condition:
+  - active_loop: onboarding_form
+  steps:
+  - action: onboarding_form
+  - active_loop: null
+  - action: utter_onboarding_done
+  - action: action_create_training_plan
+
+- rule: Plan erstellen auf Anfrage
+  steps:
+  - intent: request_plan
+  - action: action_request_plan
+
+- rule: Plan anzeigen
+  steps:
+  - intent: show_plan
+  - action: action_show_plan
+
+- rule: Dashboard anzeigen
+  steps:
+  - intent: show_dashboard
+  - action: action_show_dashboard_summary
+
+- rule: Workout loggen
+  steps:
+  - intent: log_workout
+  - action: action_log_workout
+
+# LLM-Actions (nur die 5)
+- rule: Übung erklären
+  steps:
+  - intent: ask_exercise_info
+  - action: action_explain_exercise
+
+- rule: Ernährung
+  steps:
+  - intent: ask_nutrition
+  - action: action_nutrition_advice
+
+- rule: Motivation
+  steps:
+  - intent: ask_motivation
+  - action: action_motivate
+
+- rule: Plan anpassen
+  steps:
+  - intent: modify_plan
+  - action: action_modify_plan
+
+# Wenn Tage/Ziel/Level außerhalb des Onboarding-Forms genannt werden → Plan anpassen
+- rule: Tage außerhalb Form → Plan anpassen
+  condition:
+  - active_loop: null
+  steps:
+  - intent: inform_days_per_week
+  - action: action_modify_plan
+
+- rule: Ziel außerhalb Form → Plan anpassen
+  condition:
+  - active_loop: null
+  steps:
+  - intent: inform_goal
+  - action: action_modify_plan
+
+- rule: Level außerhalb Form → Plan anpassen
+  condition:
+  - active_loop: null
+  steps:
+  - intent: inform_fitness_level
+  - action: action_modify_plan
+
+- rule: Ziel ändern
+  steps:
+  - intent: change_goal
+  - action: utter_ask_new_goal
+
+- rule: Übung tauschen
+  steps:
+  - intent: swap_exercise
+  - action: action_swap_exercise
+
+- rule: Workout war zu leicht
+  steps:
+  - intent: workout_felt_easy
+  - action: utter_react_workout_easy
+
+- rule: Workout war genau richtig
+  steps:
+  - intent: workout_felt_right
+  - action: utter_react_workout_right
+
+- rule: Workout war sehr anstrengend
+  steps:
+  - intent: workout_felt_hard
+  - action: utter_react_workout_hard
+
+- rule: Check-in geht gut
+  steps:
+  - intent: checkin_doing_well
+  - action: utter_checkin_doing_well
+
+- rule: Check-in braucht Erholung
+  steps:
+  - intent: checkin_need_rest
+  - action: utter_checkin_need_rest
+
+- rule: Chitchat über LLM
+  steps:
+  - intent: chitchat
+  - action: action_default_fallback_llm
+
+- rule: Gewicht einloggen
+  steps:
+  - intent: inform_weight
+  - action: action_log_weight
+
+- rule: Fallback an LLM
+  condition:
+  - active_loop: null
+  steps:
+  - intent: nlu_fallback
+  - action: action_default_fallback_llm
+
+# Cardio-Tracking Flow
+- rule: Laufen starten
+  steps:
+  - intent: log_running
+  - action: action_start_running_log
+
+- rule: Radfahren starten
+  steps:
+  - intent: log_cycling
+  - action: action_start_cycling_log
+
+- rule: Cardio Distanz verarbeiten
+  condition:
+  - slot_was_set:
+    - awaiting_cardio_distance: true
+  steps:
+  - intent: provide_distance
+  - action: action_handle_cardio_distance
+
+- rule: Cardio Distanz Fallback
+  condition:
+  - slot_was_set:
+    - awaiting_cardio_distance: true
+  steps:
+  - intent: nlu_fallback
+  - action: action_handle_cardio_distance
+
+- rule: Cardio Distanz aus inform_weight
+  condition:
+  - slot_was_set:
+    - awaiting_cardio_distance: true
+  steps:
+  - intent: inform_weight
+  - action: action_handle_cardio_distance
+
+- rule: Cardio Dauer verarbeiten
+  condition:
+  - slot_was_set:
+    - awaiting_cardio_duration: true
+  steps:
+  - intent: provide_duration
+  - action: action_handle_cardio_duration
+
+- rule: Cardio Dauer Fallback
+  condition:
+  - slot_was_set:
+    - awaiting_cardio_duration: true
+  steps:
+  - intent: nlu_fallback
+  - action: action_handle_cardio_duration
+
+- rule: Lauftyp verarbeiten
+  condition:
+  - slot_was_set:
+    - awaiting_running_type: true
+  steps:
+  - intent: provide_running_type
+  - action: action_handle_running_type
+
+- rule: Intensität verarbeiten
+  condition:
+  - slot_was_set:
+    - awaiting_intensity: true
+  steps:
+  - intent: provide_subjective_intensity
+  - action: action_handle_intensity
+
+# Daily Check-in / Wellbeing
+- rule: Wellbeing speichern
+  steps:
+  - intent: update_wellbeing
+  - action: action_save_wellbeing
+
+# Krafttraining-Tracking Flow
+- rule: Krafttraining starten
+  steps:
+  - intent: log_strength
+  - action: action_start_strength_log
+
+- rule: Übungsname verarbeiten
+  condition:
+  - slot_was_set:
+    - awaiting_strength_exercise: true
+  steps:
+  - intent: provide_exercise_name
+  - action: action_handle_exercise_name
+
+- rule: Gewicht und Reps verarbeiten
+  condition:
+  - slot_was_set:
+    - awaiting_strength_weight: true
+  steps:
+  - intent: provide_weight_reps
+  - action: action_handle_weight_reps
+
+- rule: Kraft-Intensität verarbeiten
+  condition:
+  - slot_was_set:
+    - awaiting_strength_intensity: true
+  steps:
+  - intent: provide_subjective_intensity
+  - action: action_handle_strength_intensity
+
+- rule: Weitere Übung loggen
+  condition:
+  - slot_was_set:
+    - awaiting_strength_exercise: true
+  steps:
+  - intent: confirm_more_exercises
+  - action: action_handle_exercise_name
+
+- rule: Keine weiteren Übungen
+  steps:
+  - intent: deny_more_exercises
+  - action: action_save_strength_log

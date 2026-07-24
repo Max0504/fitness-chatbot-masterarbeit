@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+- story: Begrüßung und Onboarding
+  steps:
+  - intent: greet
+  - action: action_smart_greet
+  - intent: start_onboarding
+  - action: onboarding_form
+  - active_loop: onboarding_form
+  - active_loop: null
+  - action: utter_onboarding_done
+  - action: action_create_training_plan
+
+- story: Direkt Plan erstellen
+  steps:
+  - intent: request_plan
+  - action: action_request_plan
+
+- story: Plan anzeigen nach Onboarding
+  steps:
+  - action: action_create_training_plan
+  - intent: show_plan
+  - action: action_show_plan
+
+- story: Workout loggen und Dashboard
+  steps:
+  - intent: log_workout
+  - action: action_log_workout
+  - intent: show_dashboard
+  - action: action_show_dashboard_summary
+
+- story: Motivation nach Workout
+  steps:
+  - intent: log_workout
+  - action: action_log_workout
+  - intent: ask_motivation
+  - action: action_motivate
+
+- story: Ernährung nach Onboarding
+  steps:
+  - action: utter_onboarding_done
+  - action: action_create_training_plan
+  - intent: ask_nutrition
+  - action: action_nutrition_advice
+
+- story: Workout geloggt - zu leicht - Plan anpassen
+  steps:
+  - intent: log_workout
+  - action: action_log_workout
+  - intent: workout_felt_easy
+  - action: utter_react_workout_easy
+  - intent: modify_plan
+  - action: action_modify_plan
+
+- story: Workout geloggt - zu anstrengend - Plan anpassen
+  steps:
+  - intent: log_workout
+  - action: action_log_workout
+  - intent: workout_felt_hard
+  - action: utter_react_workout_hard
+  - intent: modify_plan
+  - action: action_modify_plan

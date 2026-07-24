@@ -1,0 +1,783 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hallo
+    - hey
+    - guten tag
+    - servus
+    - moin
+    - hi coach
+    - hallo, ich bin neu hier
+    - guten morgen
+    - guten abend
+    - na
+    - hey coach
+    - hola
+
+- intent: goodbye
+  examples: |
+    - tschüss
+    - bis später
+    - ciao
+    - mach's gut
+    - bye
+    - bis bald
+    - auf wiedersehen
+    - bis dann
+    - tschau
+    - ich bin weg
+    - bis morgen
+
+- intent: affirm
+  examples: |
+    - ja
+    - klar
+    - genau
+    - jap
+    - passt
+    - jo
+    - perfekt
+    - stimmt
+    - richtig
+    - ja bitte
+    - auf jeden fall
+    - natürlich
+    - absolut
+    - yep
+    - okay
+
+- intent: deny
+  examples: |
+    - nein
+    - nö
+    - lieber nicht
+    - eher nicht
+    - nope
+    - ne
+    - auf keinen fall
+    - danke nein
+    - nein danke
+    - nicht wirklich
+
+- intent: thank
+  examples: |
+    - danke
+    - vielen dank
+    - super danke
+    - thx
+    - merci
+    - danke schön
+    - herzlichen dank
+    - ich danke dir
+    - danke coach
+    - cool danke
+
+- intent: bot_capabilities
+  examples: |
+    - was kannst du
+    - hilfe
+    - was machst du
+    - wie funktionierst du
+    - was kann ich machen
+    - zeig mir was du kannst
+    - ich brauche hilfe
+    - wie kann ich anfangen
+    - was bietest du an
+    - help
+
+- intent: start_onboarding
+  examples: |
+    - ich will loslegen
+    - lass uns starten
+    - ich möchte trainieren
+    - hilf mir einen plan zu machen
+    - ich will fitter werden, hilf mir
+    - ich brauche einen trainingsplan
+    - starten wir
+    - los geht's
+    - ich bin bereit
+    - fang an
+    - let's go
+    - ich möchte anfangen
+    - ich will mit dem training beginnen
+    - neuer plan bitte
+
+- intent: inform_name
+  examples: |
+    - ich heiße [Max](person_name)
+    - mein name ist [Anna](person_name)
+    - [Tom](person_name)
+    - nenn mich [Chris](person_name)
+    - ich bin [Lena](person_name)
+    - [Markus](person_name)
+    - [Sara](person_name)
+    - du kannst mich [Felix](person_name) nennen
+    - [Julia](person_name)
+    - [David](person_name)
+    - [Lisa](person_name)
+    - mein name ist [Michael](person_name)
+    - ich heiße [Sophie](person_name)
+    - [Kevin](person_name)
+    - [Maria](person_name)
+
+- intent: inform_goal
+  examples: |
+    - ich will [abnehmen](goal:weight_loss)
+    - mein ziel ist [muskelaufbau](goal:muscle_gain)
+    - ich möchte [muskeln aufbauen](goal:muscle_gain)
+    - [gewicht verlieren](goal:weight_loss)
+    - einfach [fitter werden](goal:general_fitness)
+    - ich will [ausdauer](goal:endurance) verbessern
+    - [kraft aufbauen](goal:strength)
+    - ich will [stärker](goal:strength) werden
+    - [krafttraining](goal:strength) bitte
+    - ich möchte meine [maximalkraft](goal:strength) verbessern
+    - [powerlifting](goal:strength) vorbereiten
+    - mein ziel ist [abzunehmen](goal:weight_loss)
+    - [allgemeine fitness](goal:general_fitness)
+    - ich möchte [laufen](goal:endurance) können
+    - [muskelaufbau](goal:muscle_gain) bitte
+    - ich will [schlanker](goal:weight_loss) werden
+    - [ausdauer verbessern](goal:endurance)
+    - ich will [mehr muskeln](goal:muscle_gain)
+    - [gewicht](goal:weight_loss) reduzieren
+    - [marathonlauf](goal:endurance) vorbereiten
+    - [definieren](goal:weight_loss) und Fett abbauen
+
+- intent: inform_fitness_level
+  examples: |
+    - ich bin [anfänger](fitness_level:beginner)
+    - bin [fortgeschritten](fitness_level:intermediate)
+    - schon ziemlich [fit](fitness_level:advanced)
+    - [profi](fitness_level:advanced)
+    - bin [neu](fitness_level:beginner) im training
+    - eher [mittel](fitness_level:intermediate)
+    - ich bin [einsteiger](fitness_level:beginner)
+    - [anfänger](fitness_level:beginner)
+    - [intermediate](fitness_level:intermediate)
+    - [advanced](fitness_level:advanced)
+    - ich trainiere schon ein paar jahre, also [fortgeschritten](fitness_level:intermediate)
+    - ich mache das seit [kurzem](fitness_level:beginner)
+    - ich bin [erfahren](fitness_level:advanced)
+    - [mittelstufe](fitness_level:intermediate)
+    - noch nie [trainiert](fitness_level:beginner)
+    - ich gehe regelmäßig ins gym, bin [fortgeschritten](fitness_level:intermediate)
+
+- intent: inform_days_per_week
+  examples: |
+    - [1](number)
+    - [2](number)
+    - [3](number)
+    - [4](number)
+    - [5](number)
+    - [6](number)
+    - [7](number)
+    - [1](number) tag
+    - [2](number) tage
+    - [3](number) tage
+    - [4](number) tage
+    - [5](number) tage
+    - [6](number) tage
+    - [7](number) tage
+    - [ein](number) mal pro woche
+    - [zwei](number) mal pro woche
+    - [drei](number) mal pro woche
+    - [vier](number) mal die woche
+    - [fünf](number) tage die woche
+    - [sechs](number) tage
+    - [täglich](number) also [7](number)
+    - ich möchte [3](number) tage trainieren
+    - am liebsten [4](number) tage
+    - [zwei](number) tage reichen mir
+    - [drei](number) trainingstage
+    - [5](number) tage pro woche
+    - nur [1](number) mal diese woche
+
+- intent: inform_equipment
+  examples: |
+    - ich habe nur [körpergewicht](equipment_type:bodyweight)
+    - ich habe [kurzhanteln](equipment_type:dumbbells)
+    - ich gehe ins [fitnessstudio](equipment_type:gym)
+    - ich habe [hanteln](equipment_type:dumbbells) und eine [langhantel](equipment_type:barbell)
+    - nur [bodyweight](equipment_type:bodyweight)
+    - ich trainiere [zuhause](equipment_type:bodyweight) ohne geräte
+    - ich hab [dumbbells](equipment_type:dumbbells)
+    - [gym](equipment_type:gym) mitgliedschaft
+    - [körpergewicht](equipment_type:bodyweight) und [kurzhanteln](equipment_type:dumbbells)
+    - ich habe ein [heimstudio](equipment_type:gym) mit allem
+    - keine geräte, nur [bodyweight](equipment_type:bodyweight)
+    - [langhantel](equipment_type:barbell) und [kurzhanteln](equipment_type:dumbbells)
+
+- intent: inform_injuries
+  examples: |
+    - keine verletzungen
+    - keine
+    - alles in ordnung
+    - nichts
+    - ich habe knieschmerzen
+    - schulterprobleme
+    - rückenschmerzen
+    - ich hab einen bandscheibenvorfall
+    - kein sport mit dem rücken bitte
+    - mein linkes knie macht probleme
+    - keine einschränkungen
+    - alles gut
+    - fit und gesund
+
+- intent: request_plan
+  examples: |
+    - erstell mir einen plan
+    - ich brauche einen neuen trainingsplan
+    - mach mir einen plan
+    - generiere einen plan
+    - plan bitte
+    - neuen plan erstellen
+    - ich möchte einen trainingsplan
+    - kannst du mir einen plan machen
+    - ich will einen neuen plan
+    - trainingsplan erstellen
+    - kannst du einen plan für mich generieren
+    - ich hätte gern einen neuen plan
+    - erstell mir was neues
+    - ich brauche einen plan für mein training
+    - erstell mir einen [Ausdauer](goal:endurance) Plan
+    - ich möchte einen [Muskelaufbau](goal:muscle_gain) Plan
+    - mach mir einen [Abnehmen](goal:weight_loss) Plan
+    - ich will einen [Kraft](goal:strength) Plan
+    - erstell einen Plan für [allgemeine Fitness](goal:general_fitness)
+    - neuer Plan für [Ausdauer](goal:endurance)
+    - ich brauche einen Plan zum [Abnehmen](goal:weight_loss)
+    - plan für [muskelaufbau](goal:muscle_gain) erstellen
+    - ich möchte einen neuen [Ausdauerplan](goal:endurance)
+    - einen [Kraftplan](goal:strength) bitte
+
+- intent: show_plan
+  examples: |
+    - zeig mir meinen plan
+    - was steht heute an
+    - was muss ich heute trainieren
+    - mein plan bitte
+    - zeig meinen trainingsplan
+    - was trainiere ich heute
+    - plan anzeigen
+    - wie sieht mein plan aus
+    - trainingsplan anzeigen
+    - zeig mir meine workouts
+    - was mache ich als nächstes
+
+- intent: show_dashboard
+  examples: |
+    - zeig mein dashboard
+    - wie sind meine fortschritte
+    - status
+    - meine punkte
+    - wie viel hab ich schon geschafft
+    - wie viele punkte habe ich
+    - mein level
+    - fortschritt anzeigen
+    - wie läuft's
+    - zeig meine stats
+
+- intent: log_workout
+  examples: |
+    - ich hab heute trainiert
+    - workout fertig
+    - hab gerade trainiert
+    - training abgeschlossen
+    - ich bin durch mit dem workout
+    - training erledigt
+    - workout done
+    - hab trainiert
+    - ich hab sport gemacht
+    - einheit abgehakt
+    - training war super
+    - fertig trainiert
+    - workout geschafft
+    - hab heute sport gemacht
+
+- intent: ask_nutrition
+  examples: |
+    - was soll ich essen
+    - hast du tipps zur ernährung
+    - was esse ich am besten nach dem training
+    - wie viele kalorien brauche ich
+    - ernährungstipp
+    - was soll ich vor dem training essen
+    - wie viel protein brauche ich
+    - was ist gesund
+    - ernährungsberatung
+    - was essen zum muskelaufbau
+    - was hilft beim abnehmen
+    - welche lebensmittel empfiehlst du
+    - meal prep tipps
+    - makros erklären
+    - erstell mir einen ernährungsplan
+    - ich brauche einen diätplan
+    - kannst du mir einen essensplan machen
+    - was soll ich zum abnehmen essen
+    - ernährungsplan für muskelaufbau
+    - wie soll ich mich ernähren
+    - gib mir einen ernährungsplan
+    - was esse ich um abzunehmen
+    - diät tipps
+    - was ist ein guter ernährungsplan
+    - ich will meine ernährung umstellen
+
+- intent: ask_exercise_info
+  examples: |
+    - wie macht man [kniebeugen](exercise_name)
+    - erklär mir [liegestütze](exercise_name)
+    - was ist ein [kreuzheben](exercise_name)
+    - wie geht [bankdrücken](exercise_name) richtig
+    - zeig mir wie [plank](exercise_name) geht
+    - erkläre [bizeps curls](exercise_name)
+    - wie funktionieren [ausfallschritte](exercise_name)
+    - erkläre mir [klimmzüge](exercise_name)
+    - wie mache ich [burpees](exercise_name) richtig
+    - erkläre [schulterdrücken](exercise_name)
+    - wie geht [mountain climbers](exercise_name)
+
+- intent: ask_motivation
+  examples: |
+    - ich hab keine lust mehr
+    - motivier mich
+    - ich will aufgeben
+    - das ist zu hart
+    - hilf mir dranzubleiben
+    - ich bin so müde
+    - ich schaff das nicht
+    - das training ist zu anstrengend
+    - ich verliere die motivation
+    - brauche motivation
+    - push mich bitte
+    - ich komme nicht vom sofa hoch
+    - bin am limit
+    - der innere schweinehund gewinnt
+
+- intent: modify_plan
+  examples: |
+    - kannst du den plan anpassen
+    - der plan ist zu schwer
+    - mach den plan leichter
+    - ich brauch was anderes
+    - der plan ist zu einfach
+    - mach ihn schwerer
+    - ich möchte weniger tage trainieren
+    - ich will mehr tage trainieren
+    - ändere meinen plan
+    - passe den plan an
+    - ich möchte nur noch [3](number) tage trainieren
+    - ändere mein ziel auf [abnehmen](goal:weight_loss)
+    - ich will jetzt [muskelaufbau](goal:muscle_gain) machen
+    - mach einen plan für [4](number) tage
+    - der plan passt nicht
+    - ich brauche einen anderen plan
+    - plan zu intensiv
+
+- intent: no_specific_goal
+  examples: |
+    - kein spezifisches ziel
+    - kein
+    - keines
+    - nicht nötig
+    - egal
+    - weiter
+    - überspringen
+    - kein besonderes ziel
+    - nichts bestimmtes
+    - einfach fit werden
+    - kein weiteres ziel
+
+- intent: change_goal
+  examples: |
+    - ich möchte mein Ziel ändern
+    - ziel ändern
+    - neues Ziel setzen
+    - ich will mein Trainingsziel wechseln
+    - anderes Ziel
+    - zielwechsel
+    - ich möchte andere Prioritäten setzen
+    - ich will auf ein anderes Ziel umsteigen
+    - mein Ziel hat sich geändert
+    - ich möchte jetzt was anderes trainieren
+    - ich will mein Ziel neu setzen
+    - ziel neu definieren
+
+- intent: swap_exercise
+  examples: |
+    - tausch [liegestütz](exercise_name) aus
+    - ersetze [kniebeugen](exercise_name) durch was anderes
+    - ich mag keine [plank](exercise_name) mehr
+    - [liegestütze](exercise_name) tauschen bitte
+    - wechsel [burpees](exercise_name) aus
+    - [kreuzheben](exercise_name) durch eine andere Übung ersetzen
+    - ich will keine [klimmzüge](exercise_name) machen
+    - ändere [ausfallschritte](exercise_name) in meinem plan
+    - andere übung statt [bankdrücken](exercise_name)
+    - [crunches](exercise_name) austauschen
+    - ich komme nicht mit [liegestütz](exercise_name) zurecht, tausch sie
+    - kannst du [kniebeugen](exercise_name) gegen etwas anderes ersetzen
+
+- intent: inform_weight
+  examples: |
+    - ich wiege [75](weight_value) kg
+    - mein gewicht ist [80](weight_value) kg
+    - [72.5](weight_value) kg
+    - [68](weight_value) kilo
+    - aktuell [85](weight_value) kg
+    - heute [77](weight_value) kg gewogen
+    - [90](weight_value)
+    - ich bin bei [73](weight_value) kg
+    - [65.5](weight_value) kg heute morgen
+    - gewicht [82](weight_value)
+
+- intent: workout_felt_easy
+  examples: |
+    - war zu leicht
+    - viel zu einfach
+    - keine echte Herausforderung
+    - das war easy
+    - war nicht anstrengend genug
+    - zu wenig
+    - war locker
+    - kaum geschwitzt
+    - definitiv zu leicht für mich
+    - der Plan ist zu einfach
+
+- intent: workout_felt_right
+  examples: |
+    - genau richtig
+    - hat gut gepasst
+    - perfekte Intensität
+    - war super
+    - genau das richtige Level
+    - hat sich gut angefühlt
+    - bin zufrieden
+    - war ideal
+    - hat Spaß gemacht
+    - war genau mein Niveau
+
+- intent: workout_felt_hard
+  examples: |
+    - war sehr anstrengend
+    - bin am Limit
+    - war brutal
+    - viel zu schwer
+    - kaum geschafft
+    - war zu hart
+    - ich war komplett am Ende
+    - super anstrengend
+    - sehr intensiv
+    - war zu viel für mich
+
+- intent: checkin_doing_well
+  examples: |
+    - mir geht es gut
+    - alles super
+    - bin fit
+    - fühle mich gut
+    - alles bestens
+    - passt
+    - geht mir prima
+
+- intent: checkin_need_rest
+  examples: |
+    - ich brauche eine Pause
+    - bin müde
+    - fühle mich erschöpft
+    - brauche Erholung
+    - bin noch nicht erholt
+    - Körper braucht Ruhe
+    - war krank
+    - hatte keine Zeit
+
+- intent: chitchat
+  examples: |
+    - wie geht es dir
+    - was ist dein name
+    - bist du ein bot
+    - wie heißt du
+    - bist du ki
+    - wer hat dich gebaut
+    - was bist du
+    - kannst du deutsch
+    - ich langweile mich
+    - reden wir einfach
+    - bist du ein mensch
+    - hast du einen namen
+    - bist du eine ki
+    - wer bist du
+    - kennst du dich mit fitness aus
+    - wie alt bist du
+    - was machst du gerade
+    - erzähl mir was über dich
+
+- intent: log_running
+  examples: |
+    - ich war laufen
+    - heute gelaufen
+    - bin [8](distance) km gerannt
+    - war joggen
+    - hab heute einen Lauf gemacht
+    - bin heute morgen laufen gegangen
+    - ich habe heute [10](distance) Kilometer gelaufen
+    - war gerade draußen laufen
+    - hab gerade meinen Morgenlauf beendet
+    - bin [5](distance) km gejoggt
+    - heute war ich beim Laufen
+    - hab meinen Lauf erledigt
+    - war heute laufen, [45](duration_min) Minuten
+    - bin [12](distance) km in [60](duration_min) Minuten gelaufen
+    - laufen war heute dabei
+    - hab heute Joggen gemacht
+    - Laufeinheit abgehakt
+    - war heute draußen joggen, ungefähr [7](distance) km
+    - hab eine Runde gedreht
+
+- intent: log_cycling
+  examples: |
+    - ich war Rad fahren
+    - bin heute geradelt
+    - hab eine Fahrradtour gemacht
+    - war mit dem Fahrrad unterwegs
+    - bin [25](distance) km gefahren
+    - hab heute Rad gefahren
+    - war heute Radfahren
+    - Fahrradtour heute erledigt
+    - bin geradelt, [30](distance) Kilometer
+    - hab meine Radeinheit gemacht
+    - war mit dem Bike draußen
+    - bin heute mit dem Fahrrad [40](distance) km gefahren
+    - hab heute [1](duration_min) Stunde Rad gefahren
+    - Cycling war heute dabei
+    - bin eine Stunde geradelt
+    - war Mountainbiken
+    - hab heute eine Radausfahrt gemacht
+    - bin mit dem Rennrad raus
+
+- intent: provide_distance
+  examples: |
+    - [5](distance) km
+    - [8](distance) Kilometer
+    - [10](distance)
+    - ungefähr [12](distance) km
+    - etwa [7](distance) Kilometer
+    - [3](distance) km war es
+    - ich bin [15](distance) km gelaufen
+    - [4,5](distance) Kilometer
+    - [6](distance) km heute
+    - ca. [9](distance) km
+    - [20](distance) Kilometer
+    - knapp [5](distance) km
+    - [8,5](distance) km
+    - rund [10](distance) km
+    - [11](distance) Kilometer waren es
+    - [5](distance)km
+    - [10](distance)km
+    - [7](distance)km
+    - [3](distance)km
+    - [8](distance)km
+    - [12](distance)km
+    - [5,5](distance)km
+    - [7,5](distance)km
+    - [15](distance)km
+    - [21](distance)km
+    - [42](distance)km
+
+- intent: provide_duration
+  examples: |
+    - [45](duration_min) Minuten
+    - [30](duration_min) min
+    - eine Stunde
+    - [60](duration_min) Minuten
+    - [90](duration_min) Minuten
+    - etwa [40](duration_min) Minuten
+    - [25](duration_min) min war es
+    - ungefähr [50](duration_min) Minuten
+    - [1](duration_min) Stunde
+    - eine halbe Stunde
+    - [35](duration_min) Minuten
+    - ca. [55](duration_min) min
+    - [75](duration_min) Minuten
+    - anderthalb Stunden
+    - [20](duration_min) Minuten
+
+- intent: provide_running_type
+  examples: |
+    - war ein [lockerer](running_type) Lauf
+    - [locker](running_type) gelaufen
+    - [Intervall](running_type) Training
+    - hab [Intervalle](running_type) gemacht
+    - war ein [Tempolauf](running_type)
+    - [tempo](running_type) heute
+    - war ein [langer Lauf](running_type)
+    - [langer](running_type) Lauf
+    - hab [Fartlek](running_type) gemacht
+    - war [locker](running_type)
+    - [Intervalltraining](running_type)
+    - war ein [flotter](running_type) Lauf
+    - [lockeres](running_type) Joggen
+    - war ziemlich [flott](running_type)
+    - hab [Tempodauerläufe](running_type) gemacht
+
+- intent: provide_subjective_intensity
+  examples: |
+    - war [leicht](subjective_intensity)
+    - ziemlich [anstrengend](subjective_intensity)
+    - hat sich [schwer](subjective_intensity) angefühlt
+    - war [ok](subjective_intensity)
+    - [mittel](subjective_intensity)
+    - [leichte](subjective_intensity) Einheit
+    - war sehr [schwer](subjective_intensity)
+    - hat sich gut angefühlt, also [leicht](subjective_intensity)
+    - war heute [hart](subjective_intensity)
+    - [medium](subjective_intensity)
+    - nicht so [schwer](subjective_intensity)
+    - war [moderat](subjective_intensity)
+    - ganz schön [anstrengend](subjective_intensity)
+    - [easy](subjective_intensity) heute
+    - war ein harter Kampf
+
+- intent: provide_activity_date
+  examples: |
+    - das war heute
+    - gestern
+    - heute
+    - war [gestern](activity_date)
+    - [heute](activity_date) morgen
+    - war [vorgestern](activity_date)
+    - am [Montag](activity_date)
+    - [Dienstag](activity_date)
+    - war am [Mittwoch](activity_date)
+    - [heute](activity_date) war das
+    - [gestern](activity_date) Abend
+    - letzten [Donnerstag](activity_date)
+    - am [Freitag](activity_date)
+    - heute früh
+    - [gestern](activity_date) Morgen
+
+- intent: log_strength
+  examples: |
+    - Ich hab Krafttraining gemacht
+    - war im Gym
+    - Gewichte gehoben
+    - hab trainiert
+    - Krafttraining heute
+    - bin heute im Fitnessstudio gewesen
+    - hab Hanteln gestemmt
+    - Gym Session abgeschlossen
+    - war an den Gewichten
+    - Strength Training heute
+    - hab ich Krafttraining gemacht
+    - heute war Krafttag
+    - Muskeltraining gemacht
+    - ich war heute an den Geräten
+    - hab heute Gewichte gehoben
+
+- intent: provide_exercise_name
+  examples: |
+    - [Bankdrücken](strength_exercise)
+    - [Kniebeugen](strength_exercise)
+    - [Klimmzüge](strength_exercise)
+    - [Kreuzheben](strength_exercise)
+    - [Schulterdrücken](strength_exercise)
+    - [Bizepscurls](strength_exercise)
+    - [Trizeps-Dips](strength_exercise)
+    - [Langhantelrudern](strength_exercise)
+    - [Liegestütze](strength_exercise)
+    - [Ausfallschritte](strength_exercise)
+    - [Latziehen](strength_exercise)
+    - [Beinpresse](strength_exercise)
+    - [Wadenheben](strength_exercise)
+    - [Plank](strength_exercise)
+    - [Seitheben](strength_exercise)
+    - [Kurzhantel-Rudern](strength_exercise)
+    - [Dips](strength_exercise)
+    - [Rudern](strength_exercise)
+
+- intent: provide_weight_reps
+  examples: |
+    - [60](weight_kg) kg, [3](sets) mal [10](reps)
+    - [80](weight_kg) kg und [5](reps) Wiederholungen
+    - [3](sets) Sätze à [8](reps) Reps mit [70](weight_kg) kg
+    - [3](sets)x[10](reps) mit [60](weight_kg) kg
+    - [4](sets) mal [12](reps) Wiederholungen
+    - [10](reps) Wiederholungen mit [50](weight_kg) kg
+    - [5](reps) Reps [100](weight_kg) kg
+    - [3](sets) Sätze [6](reps) Wiederholungen [90](weight_kg) Kilo
+    - [12](reps) mal ohne Gewicht
+    - Körpergewicht [3](sets) mal [8](reps)
+    - [20](reps) Wiederholungen
+    - [3](sets) Sätze [10](reps)
+    - mit [75](weight_kg) kg [3](sets) mal [5](reps)
+    - [8](reps) Reps [3](sets) Sets [65](weight_kg) kg
+    - [40](weight_kg) Kilo [4](sets) mal [15](reps)
+
+- intent: provide_strength_sets
+  examples: |
+    - [3](sets) Sätze
+    - [4](sets) Sets
+    - ich hab [5](sets) Sätze gemacht
+    - waren [3](sets) Durchgänge
+    - [4](sets) Runden
+    - hab [3](sets) mal gemacht
+    - [2](sets) Sätze
+    - [6](sets) Sets insgesamt
+    - [3](sets) Durchläufe
+    - [4](sets) Sätze insgesamt
+    - waren [5](sets) Sätze
+    - nur [2](sets) Sätze heute
+    - [3](sets)
+
+- intent: confirm_more_exercises
+  examples: |
+    - Ja, noch eine Übung
+    - noch eine
+    - ja mehr
+    - eine weitere Übung
+    - noch mehr
+    - ja noch was
+    - weiter
+    - Ja
+    - noch eine Übung dazu
+    - ja genau
+    - mehr einloggen
+    - hab noch mehr gemacht
+
+- intent: deny_more_exercises
+  examples: |
+    - Nein, fertig
+    - das war alles
+    - fertig für heute
+    - keine weiteren Übungen
+    - das wars
+    - bin fertig
+    - reicht
+    - kein weiteres
+    - nein danke
+    - das war das letzte
+    - alles eingetragen
+    - nein
+
+- intent: update_wellbeing
+  examples: |
+    - mir geht es [gut](wellbeing)
+    - ich fühle mich [gut](wellbeing)
+    - [gut](wellbeing)
+    - [super](wellbeing)
+    - [top](wellbeing)
+    - fühle mich [ok](wellbeing)
+    - [ok](wellbeing)
+    - [ganz ok](wellbeing)
+    - geht so
+    - ich bin [müde](wellbeing)
+    - [müde](wellbeing)
+    - bin heute [müde](wellbeing)
+    - [erschöpft](wellbeing)
+    - fühle mich [schlecht](wellbeing)
+    - [schlecht](wellbeing)
+    - heute [nicht gut](wellbeing)
+    - ich bin [k.o.](wellbeing)

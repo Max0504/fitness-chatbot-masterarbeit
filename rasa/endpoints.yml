@@ -1,0 +1,9 @@
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+  timeout: 60
+
+tracker_store:
+  type: SQL
+  dialect: "sqlite"
+  url: ""
+  db: "data/rasa_tracker.db"

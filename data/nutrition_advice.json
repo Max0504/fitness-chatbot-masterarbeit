@@ -1,0 +1,51 @@
+{
+  "goal": "muscle_gain",
+  "specific_goal": null,
+  "static": {
+    "goal_note": "Fokus auf einen moderaten Kalorienüberschuss kombiniert mit einer hohen Proteinzufuhr, um das Muskelwachstum bei 78 kg Körpergewicht optimal zu unterstützen.",
+    "general_tips": [
+      "Strebe einen täglichen Überschuss von etwa 200-300 Kalorien an, um Muskeln aufzubauen ohne übermäßig Fett anzusetzen.",
+      "Trinke über den Tag verteilt mindestens 2,5 bis 3 Liter Wasser, um die Stoffwechselprozesse zu unterstützen.",
+      "Konsumiere 1,6 bis 2,0 Gramm Protein pro Kilogramm Körpergewicht, um die Muskelproteinsynthese zu maximieren."
+    ]
+  },
+  "meals": [
+    {
+      "meal_type": "Frühstück",
+      "name": "Protein-Haferflocken mit Beeren",
+      "desc": "Haferflocken gekocht in Sojamilch mit einem Löffel Whey-Protein, Leinsamen und frischen Blaubeeren.",
+      "approx_kcal": 450
+    },
+    {
+      "meal_type": "Mittagessen",
+      "name": "Hähnchenbrust mit Vollkornreis",
+      "desc": "Gebratene Hähnchenbrust mit 100g Vollkornreis, gedünstetem Brokkoli und einem Teelöffel Olivenöl.",
+      "approx_kcal": 700
+    },
+    {
+      "meal_type": "Abendessen",
+      "name": "Lachsfilet mit Süßkartoffeln",
+      "desc": "Gebackenes Lachsfilet mit Süßkartoffelspalten und einem großen gemischten Salat.",
+      "approx_kcal": 600
+    },
+    {
+      "meal_type": "Snack",
+      "name": "Griechischer Joghurt mit Nüssen",
+      "desc": "200g griechischer Joghurt (2% Fett) mit einer Handvoll Mandeln.",
+      "approx_kcal": 250
+    }
+  ],
+  "nutrients": {
+    "key_nutrients": [
+      "Protein: Essentiell für die Reparatur und den Aufbau von Muskelgewebe nach dem Training.",
+      "Komplexe Kohlenhydrate: Liefern die notwendige Energie für intensive Trainingseinheiten und füllen die Glykogenspeicher.",
+      "Gesunde Fette: Wichtig für die Hormonproduktion, insbesondere für einen optimalen Testosteronspiegel."
+    ],
+    "avoid": [
+      "Zuckerhaltige Softdrinks: Führen zu Blutzuckerschwankungen und liefern keine wertvollen Nährstoffe.",
+      "Frittierte Lebensmittel: Enthalten minderwertige Transfette, die Entzündungsprozesse fördern können.",
+      "Stark verarbeitete Fertiggerichte: Enthalten oft zu viel Salz und versteckte gesättigte Fette bei geringer Nährstoffdichte."
+    ]
+  },
+  "ts": 1784755561.539419
+}

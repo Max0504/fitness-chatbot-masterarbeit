@@ -1,0 +1,3938 @@
+[
+  {
+    "id": "squat_bodyweight",
+    "name": "Kniebeuge",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "pushup_knee",
+    "name": "Liegestütz (Kniend)",
+    "category": "strength",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "pushup",
+    "name": "Liegestütz",
+    "category": "strength",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "lunge_bodyweight",
+    "name": "Ausfallschritte",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "plank",
+    "name": "Plank",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "wrist",
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "crunches",
+    "name": "Crunches",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back",
+      "neck"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "glute_bridge",
+    "name": "Glute Bridge",
+    "category": "strength",
+    "muscle_groups": [
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "legs",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "superman",
+    "name": "Superman",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "wall_sit",
+    "name": "Wandsitzen",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "side_plank",
+    "name": "Seitstütz",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "leg_raise_lying",
+    "name": "Beinheben (liegend)",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "legs"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "calf_raises_bodyweight",
+    "name": "Wadenheben",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness",
+      "running",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "ankle"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "tricep_dips_chair",
+    "name": "Trizeps-Dips (Stuhl)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist",
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "bird_dog",
+    "name": "Bird Dog",
+    "category": "strength",
+    "muscle_groups": [
+      "core",
+      "back"
+    ],
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dead_bug",
+    "name": "Dead Bug",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "back"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "donkey_kicks",
+    "name": "Donkey Kicks",
+    "category": "strength",
+    "muscle_groups": [
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "hip"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "good_morning_bodyweight",
+    "name": "Good Morning (Körpergewicht)",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "legs"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "hip_thrust_bodyweight",
+    "name": "Hip Thrust (Körpergewicht)",
+    "category": "strength",
+    "muscle_groups": [
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "legs",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "diamond_pushup",
+    "name": "Diamant-Liegestütz",
+    "category": "strength",
+    "muscle_groups": [
+      "arms",
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist",
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "pike_pushup",
+    "name": "Pike Push-up",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "decline_pushup",
+    "name": "Decline Liegestütz",
+    "category": "strength",
+    "muscle_groups": [
+      "chest",
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "side_lunge_bodyweight",
+    "name": "Seitwärts-Ausfallschritt",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "hip"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "bulgarian_split_squat_bodyweight",
+    "name": "Bulgarische Kniebeuge",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "reverse_lunge_bodyweight",
+    "name": "Rückwärts-Ausfallschritt",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "step_up_bodyweight",
+    "name": "Step-ups",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "pullup",
+    "name": "Klimmzug",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "chinup",
+    "name": "Chin-up",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "tricep_dips_parallel",
+    "name": "Dips (Barren)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms",
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist",
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "hollow_body_hold",
+    "name": "Hollow Body Hold",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "back"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "russian_twist",
+    "name": "Russian Twist",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "squat_jump",
+    "name": "Squat Jump",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "burpees",
+    "name": "Burpees",
+    "category": "hiit",
+    "muscle_groups": [
+      "full_body"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "back",
+      "wrist",
+      "knee",
+      "shoulder"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "mountain_climbers",
+    "name": "Mountain Climbers",
+    "category": "hiit",
+    "muscle_groups": [
+      "core",
+      "full_body"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "wrist",
+      "back"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "pistol_squat",
+    "name": "Pistol Squat",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "handstand_pushup_wall",
+    "name": "Handstand-Liegestütz (Wand)",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist",
+      "neck"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "archer_pushup",
+    "name": "Archer Push-up",
+    "category": "strength",
+    "muscle_groups": [
+      "chest",
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "nordic_curl",
+    "name": "Nordic Curl",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "running",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dragon_flag",
+    "name": "Dragon Flag",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "back"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "l_sit_floor",
+    "name": "L-Sit (Boden)",
+    "category": "strength",
+    "muscle_groups": [
+      "core",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "wrist",
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_bench_press_flat",
+    "name": "Kurzhantel-Bankdrücken (flach)",
+    "category": "strength",
+    "muscle_groups": [
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_bench_press_incline",
+    "name": "Kurzhantel-Schrägbankdrücken",
+    "category": "strength",
+    "muscle_groups": [
+      "chest",
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_fly",
+    "name": "Kurzhantel-Fliegende",
+    "category": "strength",
+    "muscle_groups": [
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_pullover",
+    "name": "Kurzhantel-Pullover",
+    "category": "strength",
+    "muscle_groups": [
+      "chest",
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_bent_over_row",
+    "name": "Kurzhantel-Rudern (beidhändig)",
+    "category": "strength",
+    "muscle_groups": [
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_single_arm_row",
+    "name": "Einarmiges Kurzhantel-Rudern",
+    "category": "strength",
+    "muscle_groups": [
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_shrugs",
+    "name": "Kurzhantel-Shrugs",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "shoulders"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "neck",
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_shoulder_press",
+    "name": "Schulterdrücken (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "lateral_raises",
+    "name": "Seitheben",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "front_raises",
+    "name": "Frontheben",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "arnold_press",
+    "name": "Arnold Press",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "reverse_fly_dumbbell",
+    "name": "Reverse Fly (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "back"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_bicep_curl",
+    "name": "Bizeps-Curls (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "hammer_curls",
+    "name": "Hammer Curls",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "elbow",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "tricep_kickback",
+    "name": "Trizeps-Kickback",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "tricep_overhead_extension_dumbbell",
+    "name": "Trizeps-Overhead-Extension",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "elbow",
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "concentration_curl",
+    "name": "Konzentrations-Curl",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "goblet_squat",
+    "name": "Goblet Squat",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "rdl_dumbbell",
+    "name": "Romanian Deadlift (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes",
+      "back"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_lunge",
+    "name": "Kurzhantel-Ausfallschritte",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_step_up",
+    "name": "Kurzhantel-Step-up",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "bulgarian_split_squat_dumbbell",
+    "name": "Bulgarische Kniebeuge (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "sumo_squat_dumbbell",
+    "name": "Sumo-Kniebeuge (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "hip"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "russian_twist_dumbbell",
+    "name": "Russian Twist (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "woodchop_dumbbell",
+    "name": "Woodchop (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "legs"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back",
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dumbbell_calf_raise",
+    "name": "Wadenheben (Kurzhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "running",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "ankle"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "bench_press_barbell",
+    "name": "Bankdrücken (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "incline_bench_press_barbell",
+    "name": "Schrägbankdrücken (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "chest",
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "close_grip_bench_press",
+    "name": "Enges Bankdrücken",
+    "category": "strength",
+    "muscle_groups": [
+      "arms",
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist",
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "deadlift_barbell",
+    "name": "Kreuzheben",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core",
+      "arms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "sumo_deadlift",
+    "name": "Sumo-Kreuzheben",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes",
+      "back"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "back",
+      "hip"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "barbell_bent_over_row",
+    "name": "Langhantelrudern",
+    "category": "strength",
+    "muscle_groups": [
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "good_morning_barbell",
+    "name": "Good Morning (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "legs"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "barbell_overhead_press",
+    "name": "Overhead Press (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "push_press_barbell",
+    "name": "Push Press",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "legs"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "back",
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "barbell_squat",
+    "name": "Langhantel-Kniebeuge",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core",
+      "back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "front_squat_barbell",
+    "name": "Front Squat",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "hip_thrust_barbell",
+    "name": "Hip Thrust (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "legs",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "back",
+      "hip"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "rdl_barbell",
+    "name": "Romanian Deadlift (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes",
+      "back"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "barbell_lunge",
+    "name": "Ausfallschritte (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "barbell_bicep_curl",
+    "name": "Bizeps-Curl (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "elbow",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "barbell_skull_crusher",
+    "name": "Skull Crusher (Langhantel)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "elbow",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "lat_pulldown_wide",
+    "name": "Latziehen (breiter Griff)",
+    "category": "strength",
+    "muscle_groups": [
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "shoulders"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "lat_pulldown_close",
+    "name": "Latziehen (enger Griff)",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "cable_seated_row",
+    "name": "Kabelzug-Rudern",
+    "category": "strength",
+    "muscle_groups": [
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "face_pull_cable",
+    "name": "Face Pull (Kabel)",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "cable_woodchop",
+    "name": "Kabel-Woodchop",
+    "category": "strength",
+    "muscle_groups": [
+      "core"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "legs"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness",
+      "weight_loss"
+    ],
+    "injuries_avoid": [
+      "back",
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "cable_fly",
+    "name": "Kabel-Fliegende",
+    "category": "strength",
+    "muscle_groups": [
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "leg_press",
+    "name": "Beinpresse",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "leg_extension",
+    "name": "Beinstrecker",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "leg_curl",
+    "name": "Beinbeuger",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "calf_raise_machine",
+    "name": "Wadenheben (Maschine)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "running",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "ankle"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "hip_abductor_machine",
+    "name": "Hüftabduktor (Maschine)",
+    "category": "strength",
+    "muscle_groups": [
+      "glutes",
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "hip"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "hip_adductor_machine",
+    "name": "Hüftadduktor (Maschine)",
+    "category": "strength",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "hip"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "chest_press_machine",
+    "name": "Brustpresse (Maschine)",
+    "category": "strength",
+    "muscle_groups": [
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "pec_deck_machine",
+    "name": "Butterfly / Pec-Deck",
+    "category": "strength",
+    "muscle_groups": [
+      "chest"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "shoulder_press_machine",
+    "name": "Schulterdrücken (Maschine)",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders"
+    ],
+    "secondary_muscles": [
+      "arms"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "tricep_pushdown_cable",
+    "name": "Trizeps-Drücken (Kabel)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "bicep_curl_machine",
+    "name": "Bizeps-Curl (Maschine)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "smith_machine_squat",
+    "name": "Smith Machine Kniebeuge",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "hyperextension_machine",
+    "name": "Hyperextensions",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "legs"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "assisted_pullup_machine",
+    "name": "Klimmzug (Maschine, assistiert)",
+    "category": "strength",
+    "muscle_groups": [
+      "back",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "dips_machine",
+    "name": "Dips (Maschine, assistiert)",
+    "category": "strength",
+    "muscle_groups": [
+      "arms",
+      "chest"
+    ],
+    "secondary_muscles": [
+      "shoulders"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "elbow"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "battle_ropes",
+    "name": "Battle Ropes",
+    "category": "hiit",
+    "muscle_groups": [
+      "arms",
+      "shoulders",
+      "core"
+    ],
+    "secondary_muscles": [
+      "back"
+    ],
+    "equipment": [
+      "gym"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_swing",
+    "name": "Kettlebell Swing",
+    "category": "strength",
+    "muscle_groups": [
+      "glutes",
+      "back",
+      "legs"
+    ],
+    "secondary_muscles": [
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_goblet_squat",
+    "name": "Kettlebell Goblet Squat",
+    "category": "strength",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "weight_loss",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_clean_press",
+    "name": "Kettlebell Clean and Press",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "legs",
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "back",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_turkish_getup",
+    "name": "Kettlebell Turkish Get-up",
+    "category": "strength",
+    "muscle_groups": [
+      "full_body"
+    ],
+    "secondary_muscles": [
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_snatch",
+    "name": "Kettlebell Snatch",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "back",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core",
+      "arms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "back",
+      "wrist"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_single_leg_deadlift",
+    "name": "Kettlebell Einbein-Kreuzheben",
+    "category": "strength",
+    "muscle_groups": [
+      "glutes",
+      "back"
+    ],
+    "secondary_muscles": [
+      "legs",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness",
+      "running"
+    ],
+    "injuries_avoid": [
+      "back",
+      "ankle"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_halo",
+    "name": "Kettlebell Halo",
+    "category": "strength",
+    "muscle_groups": [
+      "shoulders",
+      "core"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "weight_loss"
+    ],
+    "injuries_avoid": [
+      "shoulder",
+      "neck"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_row",
+    "name": "Kettlebell Rudern",
+    "category": "strength",
+    "muscle_groups": [
+      "back"
+    ],
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "muscle_gain",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "strength",
+    "duration_min": null
+  },
+  {
+    "id": "kettlebell_swing_hiit",
+    "name": "Kettlebell Swing (HIIT)",
+    "category": "hiit",
+    "muscle_groups": [
+      "glutes",
+      "back",
+      "full_body"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "run_easy",
+    "name": "Joggen (locker)",
+    "category": "running",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "general_fitness",
+      "running"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle",
+      "hip"
+    ],
+    "type": "cardio",
+    "duration_min": 30
+  },
+  {
+    "id": "run_moderate",
+    "name": "Joggen (moderat)",
+    "category": "running",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle",
+      "hip"
+    ],
+    "type": "cardio",
+    "duration_min": 40
+  },
+  {
+    "id": "run_tempo",
+    "name": "Tempolauf",
+    "category": "running",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "endurance",
+      "running",
+      "weight_loss"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "cardio",
+    "duration_min": 30
+  },
+  {
+    "id": "run_intervals",
+    "name": "Intervallläufe",
+    "category": "running",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "endurance",
+      "running",
+      "weight_loss"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "cardio",
+    "duration_min": 35
+  },
+  {
+    "id": "run_long",
+    "name": "Langer Lauf (LSD)",
+    "category": "running",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle",
+      "hip"
+    ],
+    "type": "cardio",
+    "duration_min": 60
+  },
+  {
+    "id": "walking_brisk",
+    "name": "Walken (zügig)",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [],
+    "type": "cardio",
+    "duration_min": 30
+  },
+  {
+    "id": "nordic_walking",
+    "name": "Nordic Walking",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [],
+    "type": "cardio",
+    "duration_min": 40
+  },
+  {
+    "id": "cycling_easy",
+    "name": "Radfahren (locker)",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "cardio",
+    "duration_min": 30
+  },
+  {
+    "id": "cycling_moderate",
+    "name": "Radfahren (moderat)",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "cardio",
+    "duration_min": 45
+  },
+  {
+    "id": "cycling_intense",
+    "name": "Radfahren (intensiv)",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "endurance",
+      "weight_loss"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "cardio",
+    "duration_min": 60
+  },
+  {
+    "id": "rowing_ergometer",
+    "name": "Rudergerät",
+    "category": "cardio",
+    "muscle_groups": [
+      "back",
+      "legs",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "cardio",
+    "duration_min": 20
+  },
+  {
+    "id": "elliptical",
+    "name": "Ellipsentrainer",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ],
+    "injuries_avoid": [],
+    "type": "cardio",
+    "duration_min": 30
+  },
+  {
+    "id": "stair_climbing",
+    "name": "Treppensteigen / Stairmaster",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "cardio",
+    "duration_min": 25
+  },
+  {
+    "id": "swimming",
+    "name": "Schwimmen",
+    "category": "cardio",
+    "muscle_groups": [
+      "full_body"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ],
+    "injuries_avoid": [],
+    "type": "cardio",
+    "duration_min": 40
+  },
+  {
+    "id": "jump_rope",
+    "name": "Seilspringen",
+    "category": "cardio",
+    "muscle_groups": [
+      "legs",
+      "arms"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "ankle",
+      "knee"
+    ],
+    "type": "cardio",
+    "duration_min": 15
+  },
+  {
+    "id": "hiit_high_knees",
+    "name": "High Knees",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "core"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "hiit_jumping_jacks",
+    "name": "Jumping Jacks",
+    "category": "hiit",
+    "muscle_groups": [
+      "full_body"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "ankle",
+      "knee"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "hiit_mountain_climbers",
+    "name": "Mountain Climbers (HIIT)",
+    "category": "hiit",
+    "muscle_groups": [
+      "core",
+      "full_body"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "wrist",
+      "back"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "hiit_burpees",
+    "name": "Burpees (HIIT)",
+    "category": "hiit",
+    "muscle_groups": [
+      "full_body"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "back",
+      "wrist",
+      "knee",
+      "shoulder"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "squat_jumps_hiit",
+    "name": "Squat Jumps",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "box_jumps_hiit",
+    "name": "Box Jumps",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "sprint_intervals",
+    "name": "Sprint-Intervalle",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "cardio"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "weight_loss",
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle",
+      "hip"
+    ],
+    "type": "hiit",
+    "duration_min": 20
+  },
+  {
+    "id": "tabata_squats",
+    "name": "Tabata Kniebeugen",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "tuck_jumps",
+    "name": "Tuck Jumps",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "core"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "lateral_jumps",
+    "name": "Seitwärts-Sprünge",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "plank_jacks",
+    "name": "Plank Jacks",
+    "category": "hiit",
+    "muscle_groups": [
+      "core",
+      "full_body"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "wrist",
+      "back",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "skater_jumps",
+    "name": "Skater Jumps",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "jump_lunges",
+    "name": "Ausfallsprünge",
+    "category": "hiit",
+    "muscle_groups": [
+      "legs",
+      "glutes"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "suitable_for": [
+      "weight_loss",
+      "general_fitness",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "hiit",
+    "duration_min": null
+  },
+  {
+    "id": "hip_flexor_stretch",
+    "name": "Hüftbeuger-Dehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "hip"
+    ],
+    "secondary_muscles": [
+      "legs"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running",
+      "weight_loss",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "hamstring_stretch",
+    "name": "Hamstring-Dehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running",
+      "weight_loss",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "quad_stretch",
+    "name": "Quadrizeps-Dehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running",
+      "weight_loss",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "knee",
+      "ankle"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "piriformis_stretch",
+    "name": "Piriformis-Dehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "glutes",
+      "hip"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "hip"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "chest_opener_stretch",
+    "name": "Brustdehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "chest",
+      "shoulders"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "muscle_gain",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "shoulder_cross_stretch",
+    "name": "Schulter-Querdehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "shoulders"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "neck_stretch",
+    "name": "Nackendehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "neck"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness"
+    ],
+    "injuries_avoid": [
+      "neck"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "cat_cow",
+    "name": "Katzenbuckel / Kuhgesicht",
+    "category": "mobility",
+    "muscle_groups": [
+      "back",
+      "core"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running",
+      "weight_loss",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "child_pose",
+    "name": "Kindpose",
+    "category": "mobility",
+    "muscle_groups": [
+      "back",
+      "shoulders",
+      "hip"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running",
+      "weight_loss",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "knee"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "pigeon_pose",
+    "name": "Taube (Pigeon Pose)",
+    "category": "mobility",
+    "muscle_groups": [
+      "glutes",
+      "hip"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "hip",
+      "knee"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "thoracic_rotation",
+    "name": "Thorakale Rotation",
+    "category": "mobility",
+    "muscle_groups": [
+      "back"
+    ],
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "back"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "butterfly_stretch",
+    "name": "Schmetterlingspose",
+    "category": "mobility",
+    "muscle_groups": [
+      "hip",
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "hip"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "calf_stretch",
+    "name": "Waden-Dehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "legs"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "ankle"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "worlds_greatest_stretch",
+    "name": "World's Greatest Stretch",
+    "category": "mobility",
+    "muscle_groups": [
+      "hip",
+      "legs",
+      "back",
+      "shoulders"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running",
+      "muscle_gain"
+    ],
+    "injuries_avoid": [
+      "hip",
+      "knee"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "hip_stretch_90_90",
+    "name": "90/90 Hip Stretch",
+    "category": "mobility",
+    "muscle_groups": [
+      "hip",
+      "glutes"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "suitable_for": [
+      "general_fitness",
+      "endurance",
+      "running"
+    ],
+    "injuries_avoid": [
+      "hip",
+      "knee"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  },
+  {
+    "id": "lat_stretch",
+    "name": "Latissimus-Dehnung",
+    "category": "mobility",
+    "muscle_groups": [
+      "back",
+      "shoulders"
+    ],
+    "secondary_muscles": [],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "suitable_for": [
+      "general_fitness",
+      "muscle_gain",
+      "endurance"
+    ],
+    "injuries_avoid": [
+      "shoulder"
+    ],
+    "type": "mobility",
+    "duration_min": null
+  }
+]

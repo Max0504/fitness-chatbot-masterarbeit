@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv-backend/
+.venv-rasa/
+venv/
+env/
+
+# Environment variables
+.env
+
+# Rasa
+.rasa/
+rasa/.rasa/
+rasa/models/
+rasa/results/
+data/rasa_tracker.db
+
+# Trained models (large binary files)
+models/
+
+# Database
+data/fitness.db
+data/fitness.db-shm
+data/fitness.db-wal
+
+# Logs
+data/logs/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup-Dateien
+*.bak
+*.bak_*

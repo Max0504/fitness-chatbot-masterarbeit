@@ -1,0 +1,683 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - thank
+  - bot_capabilities
+  - start_onboarding
+  - inform_name
+  - inform_goal
+  - inform_fitness_level
+  - inform_days_per_week
+  - inform_equipment
+  - inform_injuries
+  - request_plan
+  - show_plan
+  - show_dashboard
+  - log_workout
+  - modify_plan
+  - change_goal
+  - no_specific_goal
+  - swap_exercise
+  - ask_nutrition
+  - ask_exercise_info
+  - ask_motivation
+  - inform_weight
+  - chitchat
+  - workout_felt_easy
+  - workout_felt_right
+  - workout_felt_hard
+  - checkin_doing_well
+  - checkin_need_rest
+  - log_running
+  - log_cycling
+  - provide_distance
+  - provide_duration
+  - provide_running_type
+  - provide_subjective_intensity
+  - provide_activity_date
+  - log_strength
+  - provide_exercise_name
+  - provide_weight_reps
+  - provide_strength_sets
+  - confirm_more_exercises
+  - deny_more_exercises
+  - update_wellbeing
+
+entities:
+  - goal
+  - fitness_level
+  - number
+  - weight_value
+  - exercise_name
+  - equipment_type
+  - person_name
+  - distance
+  - duration_min
+  - running_type
+  - subjective_intensity
+  - modify_direction
+  - activity_date
+  - strength_exercise
+  - weight_kg
+  - reps
+  - sets
+  - wellbeing
+
+slots:
+  goal:
+    type: categorical
+    values: [weight_loss, muscle_gain, general_fitness, endurance, strength]
+    mappings:
+      - type: from_entity
+        entity: goal
+
+  fitness_level:
+    type: categorical
+    values: [beginner, intermediate, advanced]
+    mappings:
+      - type: from_entity
+        entity: fitness_level
+
+  days_per_week:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: number
+        conditions:
+          - active_loop: onboarding_form
+            requested_slot: days_per_week
+
+  user_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: person_name
+
+  user_equipment:
+    type: text
+    mappings:
+      - type: custom
+
+  user_injuries:
+    type: text
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: onboarding_form
+            requested_slot: user_injuries
+
+  specific_goal:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_intent
+        intent: no_specific_goal
+        value: "keins"
+        conditions:
+          - active_loop: onboarding_form
+            requested_slot: specific_goal
+      - type: from_text
+        conditions:
+          - active_loop: onboarding_form
+            requested_slot: specific_goal
+
+  onboarded:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  cardio_activity_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  distance_km:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: distance
+
+  cardio_duration_min:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: duration_min
+
+  cardio_running_type:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: running_type
+
+  subjective_intensity:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: subjective_intensity
+
+  activity_date_pending:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: activity_date
+
+  pace_result:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  speed_result:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  awaiting_cardio_distance:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  awaiting_cardio_duration:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  awaiting_running_type:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  awaiting_intensity:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  strength_exercise_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  strength_weight_kg:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  strength_reps:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  strength_sets:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  awaiting_strength_exercise:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  awaiting_strength_weight:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  awaiting_strength_reps_sets:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  awaiting_strength_intensity:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+  strength_log_session:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+  wellbeing:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: wellbeing
+
+forms:
+  onboarding_form:
+    required_slots:
+      - goal
+      - fitness_level
+      - days_per_week
+      - user_injuries
+      - specific_goal
+
+responses:
+  utter_ask_new_goal:
+    - text: "Welches Ziel möchtest du verfolgen?"
+      buttons:
+      - title: "💪 Muskelaufbau"
+        payload: '/modify_plan{"goal": "muscle_gain"}'
+      - title: "🏃 Ausdauer"
+        payload: '/modify_plan{"goal": "endurance"}'
+      - title: "⚖️ Abnehmen"
+        payload: '/modify_plan{"goal": "weight_loss"}'
+      - title: "🏋️ Krafttraining"
+        payload: '/modify_plan{"goal": "strength"}'
+      - title: "🌟 Allgemeine Fitness"
+        payload: '/modify_plan{"goal": "general_fitness"}'
+
+  utter_greet:
+    - text: "👋 Hi! Schön, dass du da bist. Ich bin dein persönlicher Fitness-Coach. Sag einfach 'Los geht's' und wir starten."
+    - text: "Hey! Bereit loszulegen? Sag 'Plan erstellen' und wir fangen an. 💪"
+    - text: "Hallo! Dein Coach ist bereit. Sag was du brauchst — Plan, Tracking, Motivation. 🏋️"
+    - text: "Gut, dass du da bist. Was steht heute an? Training loggen, Plan ansehen oder neu starten?"
+
+  utter_goodbye:
+    - text: "Bis bald! Bleib dran. 💪"
+    - text: "Tschüss! Wir hören uns. 👋"
+    - text: "Mach's gut — und vergiss dein Workout nicht! 🏋️"
+    - text: "Bis dann! Du schaffst das. 🔥"
+
+  utter_affirm_response:
+    - text: "Top, lass uns weitermachen."
+    - text: "Alles klar!"
+    - text: "Prima, dann legen wir los. 💪"
+    - text: "Perfekt — weiter geht's!"
+
+  utter_deny_response:
+    - text: "Okay, kein Problem."
+    - text: "Verstanden."
+    - text: "Alright, kein Stress."
+    - text: "Passt, melde dich wenn du bereit bist."
+
+  utter_thank:
+    - text: "Gerne! 😊"
+    - text: "Jederzeit."
+    - text: "Kein Ding — dafür bin ich hier!"
+
+  utter_bot_capabilities:
+    - text: |
+        Was ich für dich machen kann:
+        • Trainingsplan erstellen (basierend auf deinem Ziel & Equipment)
+        • Plan anzeigen oder anpassen (Tage, Schwierigkeit, Ziel)
+        • Übungen erklären
+        • Motivation, wenn du sie brauchst
+        • Ernährungstipps
+        • Workouts tracken und Punkte sammeln
+        Sag einfach in normalen Worten, was du willst.
+
+  utter_ask_user_name:
+    - text: "Bevor wir starten — wie heißt du?"
+    - text: "Lass uns anfangen! Wie darf ich dich nennen?"
+
+  utter_ask_goal:
+    - text: "Was ist dein Haupttrainingsziel?"
+      buttons:
+        - title: "💪 Muskelaufbau"
+          payload: '/inform_goal{"goal": "muscle_gain"}'
+        - title: "🔥 Abnehmen"
+          payload: '/inform_goal{"goal": "weight_loss"}'
+        - title: "🏃 Ausdauer"
+          payload: '/inform_goal{"goal": "endurance"}'
+        - title: "⚡ Allgemeine Fitness"
+          payload: '/inform_goal{"goal": "general_fitness"}'
+        - title: "🏋️ Kraft"
+          payload: '/inform_goal{"goal": "strength"}'
+
+  utter_ask_fitness_level:
+    - text: "Wie würdest du deinen aktuellen Fitness-Level einschätzen?"
+      buttons:
+        - title: "🌱 Anfänger"
+          payload: '/inform_fitness_level{"fitness_level": "beginner"}'
+        - title: "💪 Fortgeschritten"
+          payload: '/inform_fitness_level{"fitness_level": "intermediate"}'
+        - title: "🔥 Erfahren"
+          payload: '/inform_fitness_level{"fitness_level": "advanced"}'
+
+  utter_ask_days_per_week:
+    - text: "Wie viele Tage pro Woche möchtest du trainieren?"
+      buttons:
+        - title: "2 Tage"
+          payload: '/inform_days_per_week{"number": "2"}'
+        - title: "3 Tage"
+          payload: '/inform_days_per_week{"number": "3"}'
+        - title: "4 Tage"
+          payload: '/inform_days_per_week{"number": "4"}'
+        - title: "5 Tage"
+          payload: '/inform_days_per_week{"number": "5"}'
+        - title: "6 Tage"
+          payload: '/inform_days_per_week{"number": "6"}'
+
+  utter_ask_user_equipment:
+    - text: "Welches Equipment steht dir zur Verfügung? Z.B. nur Körpergewicht, Kurzhanteln, Langhantel, Fahrrad, Fitnessstudio oder eine Kombination."
+    - text: "Was hast du zum Trainieren? Körpergewicht, Hanteln, Fahrrad, Studio oder was anderes?"
+
+  utter_ask_user_injuries:
+    - text: "Hast du Verletzungen oder körperliche Einschränkungen, die ich berücksichtigen soll?"
+      buttons:
+        - title: "Keine Einschränkungen"
+          payload: "Keine"
+
+  utter_onboarding_done:
+    - text: "Perfekt! Ich hab alles. Dein Plan wird gerade erstellt..."
+    - text: "Alles klar — ich arbeite daran. Dein Plan erscheint gleich im Trainingsplan-Reiter. 🚀"
+    - text: "Gut. Alle Infos da, Plan wird generiert. Das dauert eine kurze Minute."
+
+  utter_workout_logged_1:
+    - text: "💪 Stark gemacht! Workout ist eingetragen. (+20 Punkte)"
+  utter_workout_logged_2:
+    - text: "🔥 Sauber! Jeder Schritt zählt. (+20 Punkte)"
+  utter_workout_logged_3:
+    - text: "Top! Du bleibst dran — das macht den Unterschied. (+20 Punkte) ⚡"
+  utter_workout_logged_4:
+    - text: "✅ Perfekt, eingetragen. Bleib in Bewegung. (+20 Punkte)"
+  utter_workout_logged_5:
+    - text: "🏆 Wieder einer im Kasten! (+20 Punkte)"
+
+  utter_streak_bonus:
+    - text: "🔥 Streak-Bonus: +10 Punkte — du bleibst am Ball!"
+    - text: "Streak! +10 Punkte extra — Konstanz zahlt sich aus. 💪"
+    - text: "Mehrere Tage in Folge — das verdient einen Bonus. +10 Punkte. 🏆"
+    - text: "+10 Streak-Punkte. So sieht Disziplin aus. ⚡"
+
+  utter_no_active_plan:
+    - text: "Du hast noch keinen aktiven Plan. Sag einfach 'Ich will loslegen' und wir starten."
+
+  utter_dashboard_hint:
+    - text: "Schau dir die Details auf der Dashboard-Seite an."
+
+  utter_ask_workout_feeling:
+    - text: "Wie hat sich das Training angefühlt?"
+      buttons:
+        - title: "😄 Leicht"
+          payload: "/workout_felt_easy"
+        - title: "💪 Genau richtig"
+          payload: "/workout_felt_right"
+        - title: "🥵 Sehr anstrengend"
+          payload: "/workout_felt_hard"
+
+  utter_react_workout_easy:
+    - text: "Zu leicht? Gut zu wissen — soll ich den Plan etwas intensiver gestalten?"
+      buttons:
+        - title: "💪 Plan schwerer machen"
+          payload: '/modify_plan{"modify_direction": "harder"}'
+        - title: "Nein, passt so"
+          payload: "/deny"
+    - text: "Wenn die Einheit zu locker war, können wir nachjustieren. Mehr Intensität?"
+      buttons:
+        - title: "💪 Plan anpassen"
+          payload: '/modify_plan{"modify_direction": "harder"}'
+        - title: "Lass mal so"
+          payload: "/deny"
+    - text: "Leicht ist manchmal gut — aber wenn es dauerhaft so ist, lohnt eine Anpassung."
+      buttons:
+        - title: "📈 Intensität erhöhen"
+          payload: '/modify_plan{"modify_direction": "harder"}'
+        - title: "Passt schon"
+          payload: "/deny"
+
+  utter_react_workout_right:
+    - text: "Perfekt — das ist genau die richtige Intensität. Weiter so! 🔥"
+    - text: "Top! Wenn der Plan so passt, bist du auf dem besten Weg. 💪"
+    - text: "Genau richtig ist das Beste was passieren kann. Kurs halten. 🎯"
+    - text: "So soll's sein. Intensität stimmt, Fortschritt kommt. 💪"
+
+  utter_react_workout_hard:
+    - text: "Respekt, du hast durchgehalten! Wenn es dauerhaft zu viel ist, kann ich den Plan lockerer gestalten."
+      buttons:
+        - title: "📝 Plan leichter machen"
+          payload: '/modify_plan{"modify_direction": "easier"}'
+        - title: "Ich bleib dran"
+          payload: "/deny"
+    - text: "Hart aber du warst dabei — das zählt. Soll ich die Belastung etwas reduzieren?"
+      buttons:
+        - title: "📝 Plan anpassen"
+          payload: '/modify_plan{"modify_direction": "easier"}'
+        - title: "Nein, ich will's so"
+          payload: "/deny"
+    - text: "Manchmal ist schwer genau richtig. Wenn's dauerhaft zu viel ist, sag Bescheid."
+      buttons:
+        - title: "📝 Plan leichter machen"
+          payload: '/modify_plan{"modify_direction": "easier"}'
+        - title: "Alles gut"
+          payload: "/deny"
+
+  utter_checkin_doing_well:
+    - text: "Freut mich! Dann nichts wie ran ans nächste Workout. 💪"
+    - text: "Super! Bleib dran — Konstanz ist alles. 🔥"
+
+  utter_checkin_need_rest:
+    - text: "Hör auf deinen Körper — Erholung ist genauso wichtig wie das Training. Melde dich wenn du wieder bereit bist!"
+    - text: "Regeneration ist Teil des Trainings. Ruh dich aus und komm zurück wenn du dich erholt hast. 💤"
+
+  utter_ask_specific_goal:
+    - text: "Hast du ein konkretes Ziel das du verfolgen willst? (Optional)"
+    - text: "Gibt es eine bestimmte Leistung oder ein Datum auf das du hinarbeitest?"
+    - text: "Hast du ein spezifisches Ziel — oder reicht dir das allgemeine Training?"
+
+  utter_ask_plan_feedback_2weeks:
+    - text: "Du trainierst jetzt schon eine Weile — wie läuft's? Passt der Plan noch?"
+      buttons:
+      - title: "💪 Passt gut!"
+        payload: "/workout_felt_right"
+      - title: "😄 Zu leicht"
+        payload: "/workout_felt_easy"
+      - title: "😅 Zu schwer"
+        payload: "/workout_felt_hard"
+      - title: "✏️ Anderes Feedback"
+        payload: "/modify_plan"
+
+  utter_cardio_good_pace:
+    - text: "Gutes Tempo heute — schneller als dein Durchschnitt. 📈"
+    - text: "Etwas flotter als sonst. Gute Entwicklung! 🚀"
+    - text: "Das war ein solides Tempo — besser als dein Schnitt. Weiter so. 💪"
+
+  utter_cardio_consistent:
+    - text: "Gleichmäßiges Tempo über mehrere Einheiten — das ist echte Ausdauer. 🎯"
+    - text: "Konstant wie ein Uhrwerk. Genau so baut man Ausdauer auf. 💪"
+    - text: "Sehr konsistente Zeiten — das zeigt Kontrolle und Kondition. 🏃"
+
+  utter_cardio_new_record:
+    - text: "Neue Bestzeit! Das ist dein schnellster Lauf bisher. 🏆"
+    - text: "Persönlicher Rekord — das passiert nicht zufällig. Stark! 🔥"
+    - text: "Bestleistung! Schreib dir das auf — von hier geht's weiter. 🏆"
+
+  utter_ask_distance:
+    - text: "Wie weit bist du gelaufen? (z.B. '5 km' oder '8,5 Kilometer')"
+
+  utter_ask_cycling_distance:
+    - text: "Wie weit bist du gefahren? (z.B. '25 km')"
+
+  utter_ask_cardio_duration:
+    - text: "Und wie lange hast du gebraucht? (z.B. '45 Minuten' oder '1 Stunde')"
+
+  utter_ask_running_type:
+    - text: "Was für ein Lauf war das?"
+      buttons:
+        - title: "🚶 Locker"
+          payload: '/provide_running_type{"running_type": "locker"}'
+        - title: "⚡ Intervall"
+          payload: '/provide_running_type{"running_type": "intervall"}'
+        - title: "🔥 Tempo"
+          payload: '/provide_running_type{"running_type": "tempo"}'
+        - title: "🏃 Langer Lauf"
+          payload: '/provide_running_type{"running_type": "lang"}'
+        - title: "🌀 Fartlek"
+          payload: '/provide_running_type{"running_type": "fartlek"}'
+
+  utter_ask_subjective_intensity:
+    - text: "Wie hat es sich angefühlt?"
+      buttons:
+        - title: "😌 Leicht"
+          payload: '/provide_subjective_intensity{"subjective_intensity": "leicht"}'
+        - title: "💪 Mittel"
+          payload: '/provide_subjective_intensity{"subjective_intensity": "mittel"}'
+        - title: "🥵 Schwer"
+          payload: '/provide_subjective_intensity{"subjective_intensity": "schwer"}'
+
+  utter_ask_activity_date:
+    - text: "War das heute?"
+      buttons:
+        - title: "Ja, heute"
+          payload: '/provide_activity_date{"activity_date": "heute"}'
+        - title: "Gestern"
+          payload: '/provide_activity_date{"activity_date": "gestern"}'
+
+  # ── Motivation-Templates (kein LLM) ──────────────────────────────────────────
+  # Gruppe: Niedriger Streak (1-3 Tage)
+  utter_motivate_low_1:
+    - text: "Jeder Profi hat mal mit Tag 1 angefangen. Du bist dabei — das ist das Entscheidende. 💪"
+  utter_motivate_low_2:
+    - text: "Die ersten Tage sind oft die härtesten. Wer jetzt durchhält, schafft alles. Bleib dran! 🔥"
+  utter_motivate_low_3:
+    - text: "Konsistenz schlägt Perfektion. Kein perfektes Training, aber konsequentes Training macht den Unterschied."
+  utter_motivate_low_4:
+    - text: "Gerade baust du eine Gewohnheit auf — und das ist mächtiger als jeder einmalige Kraftakt."
+  utter_motivate_low_5:
+    - text: "Schritt für Schritt. Heute zählt, morgen zählt, übermorgen zählt. So entsteht echte Stärke. 💪"
+
+  # Gruppe: Mittlerer Streak (4-14 Tage)
+  utter_motivate_mid_1:
+    - text: "Ein starker Streak — du hast den Grundstein gelegt. Jetzt wird's erst richtig interessant. 🚀"
+  utter_motivate_mid_2:
+    - text: "Der Flow ist da. Halte ihn aufrecht — nach 21 Tagen wird Konstanz zur echten Gewohnheit."
+  utter_motivate_mid_3:
+    - text: "Wer mehrere Wochen durchhält, verändert sich. Und du hältst durch. Das merkt man. 💪"
+  utter_motivate_mid_4:
+    - text: "Ergebnisse kommen nicht sofort — aber du tust genau das Richtige um sie zu erzwingen. Weiter!"
+  utter_motivate_mid_5:
+    - text: "Motivierte Menschen starten. Disziplinierte bleiben dran. Du bist gerade beides. 🔥"
+
+  # Gruppe: Hoher Streak (15+ Tage)
+  utter_motivate_high_1:
+    - text: "Beeindruckend. Wer so lange dabei bleibt, hat Fitness nicht als Plan — sondern als Lebensweise. 🏆"
+  utter_motivate_high_2:
+    - text: "Nach diesem Streak bist du kein Anfänger mehr. Du baust Gewohnheiten auf und hältst sie. Stark."
+  utter_motivate_high_3:
+    - text: "Andere reden über Training. Du machst es — seit Wochen. Das ist der Unterschied. 💪"
+  utter_motivate_high_4:
+    - text: "Jeder Ruhetag ist verdient, jeder Trainingstag aufgebaut. Du weißt was du tust. Mach weiter."
+  utter_motivate_high_5:
+    - text: "Konstanz wie diese ist selten. Sei stolz darauf — und bleib einfach dran. 🏆"
+
+  # Gruppe: Generisch mit Platzhaltern
+  utter_motivate_generic_1:
+    - text: "Schon {streak_days} Tage am Stück und {total_points} Punkte im Konto — das ist kein Zufall. 🔥"
+  utter_motivate_generic_2:
+    - text: "{streak_days} Trainingstage, jeder einzelne zählt. {total_points} Punkte sprechen für sich. 💪"
+  utter_motivate_generic_3:
+    - text: "Mit {total_points} Punkten bist du auf Kurs. Und {streak_days} Tage Streak zeigen: Du bleibst dabei."
+  utter_motivate_generic_4:
+    - text: "{streak_days} Tage Streak — das ist echter Fortschritt. Kein Zufall, sondern Disziplin. 💪"
+  utter_motivate_generic_5:
+    - text: "Stark: {streak_days} Tage in Folge, {total_points} Punkte. Der Aufwand zahlt sich aus. 🏆"
+
+  utter_ask_wellbeing:
+    - text: "Wie fühlst du dich heute?"
+      buttons:
+        - title: "😊 Gut"
+          payload: '/update_wellbeing{"wellbeing": "gut"}'
+        - title: "👍 Ok"
+          payload: '/update_wellbeing{"wellbeing": "ok"}'
+        - title: "😴 Müde"
+          payload: '/update_wellbeing{"wellbeing": "müde"}'
+        - title: "😕 Schlecht"
+          payload: '/update_wellbeing{"wellbeing": "schlecht"}'
+
+  utter_wellbeing_good:
+    - text: "Perfekt! Dann nichts wie ran ans Training. 💪"
+    - text: "Top! Volle Power heute. 🔥"
+
+  utter_wellbeing_ok:
+    - text: "Alright, solide Basis — mach was draus! 👊"
+    - text: "Ok ist gut genug zum Starten. Manchmal wird's besser beim Aufwärmen. 💪"
+
+  utter_wellbeing_tired:
+    - text: "Dann mach heute lieber etwas Leichtes oder gönne dir Erholung. Ein aktiver Rest-Tag kann auch was bringen. 🧘"
+    - text: "Müdigkeit ernst nehmen! Wenn du trainierst, dann nur leicht. Dein Körper braucht manchmal Pause. 😴"
+
+  utter_wellbeing_bad:
+    - text: "Dann lass uns den Trainingsplan anpassen — Erholung ist auch Training. Kümmere dich heute um dich! 💙"
+    - text: "Kein Training ist manchmal das beste Training. Hör auf deinen Körper und erhol dich. 🙏"
+
+  utter_ask_exercise_name:
+    - text: "Welche Übung hast du gemacht?"
+
+  utter_ask_weight_reps:
+    - text: "Wie schwer und wie viele Wiederholungen? (z.B. '60 kg, 3×10' oder '3 Sätze à 8 Reps')"
+    - text: "Gewicht und Wiederholungen? (z.B. '80 kg, 5 mal 5' oder nur '10 Reps' bei Körpergewicht)"
+
+  utter_ask_more_exercises:
+    - text: "Noch eine Übung einloggen?"
+      buttons:
+        - title: "💪 Ja, noch eine"
+          payload: "/confirm_more_exercises"
+        - title: "✅ Nein, fertig"
+          payload: "/deny_more_exercises"
+
+  utter_strength_log_saved:
+    - text: "✅ Eingetragen! (+10 Punkte)"
+
+  utter_default:
+    - text: "Hmm, das hab ich nicht ganz verstanden. Kannst du das anders formulieren?"
+
+actions:
+  - action_create_training_plan
+  - action_show_plan
+  - action_show_dashboard_summary
+  - action_log_workout
+  - action_explain_exercise
+  - action_motivate
+  - action_nutrition_advice
+  - action_modify_plan
+  - action_swap_exercise
+  - action_request_plan
+  - action_smart_greet
+  - action_ask_specific_goal
+  - action_default_fallback_llm
+  - action_check_onboarding_status
+  - action_log_weight
+  - action_start_running_log
+  - action_start_cycling_log
+  - action_handle_cardio_distance
+  - action_handle_cardio_duration
+  - action_handle_running_type
+  - action_handle_intensity
+  - action_save_cardio_log
+  - action_save_wellbeing
+  - action_start_strength_log
+  - action_handle_exercise_name
+  - action_handle_weight_reps
+  - action_handle_strength_intensity
+  - action_save_strength_log
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
